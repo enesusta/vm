@@ -1,9 +1,11 @@
 #!/bin/bash
 
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
 sudo apt install -y vim
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+sudo git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
-curl https://raw.githubusercontent.com/enesusta/vimrc/master/.vimrc >> .vimrc
+curl https://raw.githubusercontent.com/enesusta/vimrc/master/.vimrc >> $HOME/.vimrc
 
-vim +PluginInstall +qall
+sudo vim +PluginInstall +qall
